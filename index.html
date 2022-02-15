@@ -3,284 +3,409 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 이길영-한화케미칼 </title>
+    <title> 이길영 - 포트폴리오 </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <script src="./js/jquery-1.12.3.js"></script>
-    <script src="./js/script.js"></script>
-</head>
+    <link rel="shortcut icon" href="./images/fv.png" type="image/x-icon">
+
+    <script src="./js/jquery-1.11.3.js"></script>
+    <!-- 제이쿼리의 animate의 제약사항을 해결해주는 TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="./js/main.js"></script>
+</head> 
 <body>
-    <!-- #wrap>a{본문바로가기} -->
+    <!-- #wrap>header+section#profile+section#skill+section#portfolio+section#etc_main+footer+#popup -->
     <div id="wrap">
-        <!-- 웹접근성 : 장애인에게 본문표시를 읽어주기 위함 -->
-        <a href="#" id="skip-nav">본문바로가기</a>
-        
-        <!-- header>.innerHeader>h1.logo>a>img -->
+        <!-- header -->
         <header>
-            <div class="innerHeader">
+            <!-- .header_main>.logo.fl>h1>a>span.logoImg -->
+            <div class="header_main">
                 <!-- logo -->
-                <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="한화로고"></a></h1>
-                <!-- center menu -->
-        
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">사업영역</a></li>
-                        <li><a href="#">투자정보</a></li>
-                        <li><a href="#">인재채용</a></li>
-                    </ul>
-                </nav>
-                <!-- right menu -->
-               
-                <nav class="tnb">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-flask"></i>알기 쉬운 제품공정</a></li>
-                        <li><a href="#"><i class="fa fa-handshake-o"></i>내 삶 속의 한화케미칼</a></li>
-                        <li><a href="#">제품검색<i class="fa fa-flask"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- 1. main -->
-    
-        <section class="main">
-            <div class="mainTitle">
-                <h2>Research continuously with industry <br/>
-                    insight to drive the highest-quality products
-                </h2>
-                <p>창의적이고 경쟁력있는 선도 화학기업</p>
-                <a href="#" class="view">VIEW MORE<i class="fa fa-long-arrow-right"></i></a>
-            </div>
-        </section>
-
-        <!-- 2. about -->
-      
-        <section class="about">
-
-            <!-- title -->
-            <div class="title">
-                <h2>ABOUT Hanwha Chemical<span>.</span></h2>
-                <p>대한민국 대표 석유화학 기업, 한화케미칼을 소개합니다.</p>
-            </div>
-
-            <!-- img - 3ea set -->
-            <ul>
-                <li>
-                    <a href="#">
-                        <p class="img"><img src="./images/about_1.jpg" alt="회사소개"></p>
-                       
-                        <div class="text">
-                            <h3>회사소개</h3>
-                            <p>삶의 가치를 높이는 기술기업, 한화케미칼</p>
-                            <p class="more">MORE</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="img"><img src="./images/about_2.jpg" alt="중앙연구소"></p>
-                       
-                        <div class="text">
-                            <h3>중앙연구소</h3>
-                            <p>한결 같은 자세로 기술 개발에 전념해오고 있습니다.</p>
-                            <p class="more">MORE</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="img"><img src="./images/about_3.jpg" alt="투자정보"></p>
-                        
-                        <div class="text">
-                            <h3>투자정보</h3>
-                            <p>한화케미칼의 주요 경영사항을 제공합니다.</p>
-                            <p class="more">MORE</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- 3. innovation -->
-       
-        <section class="innovation">
-            <!-- title -->
-            <div class="title">
-                <h2>OUR PRODUCT Innovations<span>.</span></h2>
-                <p>끊임없는 기술 혁신으로  미래 성장 동력을 지속 발굴합니다.</p>
-            </div>
-
-            <!-- imgBox -->
-           
-            <div class="imgBox">
-                <div class="inner">
-                    <h3>01<span>.</span>Chlorinated Polyvinyl Chloride</h3>
-                    <!-- bottom-box -->
-                    
-                    <div class="bottom">
-                        <p>
-                            한화케미칼은 국내에서 처음으로 자체 기술로 CPVC를 생산하는데 성공하고 <br/> 
-                            2017년 울산 제2공장에 연산 3만톤 규모의 공중을 건설해 생산중입니다.
-                        </p>
-                        <a href="#">제품상세보기</a>
-                    </div>
+                <div class="logo fl">
+                    <h1><a href="index.html"><span class="logoImg"></span>
+                    GILYEONG <span class="pf">PORTFOLIO</span>
+                    </a></h1>
                 </div>
-            </div>
-        </section>
-
-        <!-- 4. me -->
-       
-        <section class="me">
-
-            <!-- title -->
-            <div class="title">
-                <h2>CHALLENGE ME<span>.</span></h2>
-                <p>한화와 함께 꿈을 키워갈 인재를 기다립니다.</p>
-            </div>
-
-            <!-- list -->
-           
-            <div class="list">
-                <ul>
-                    <li>
-                        <h3><span><i class="fa fa-briefcase"></i></span>직무 특성 및 소개</h3>
-                        <p>
-                            한국 케미칼 산업의 역사를 이끌어 온 한화케미칼이 미래를 선도하는 글로벌 케미칼리더로 함께 성장해 나갈 인재를 모집합니다. <br/>
-                            글로벌 시장 진출 및 사업다각화가 본격화됨에 따라 체계적 · 전문적인 인재 육성의 중요성을 인식하고, 그에 걸맞은 다양한 교육프로그램과 인사제도를 폭넓게 실시하고 있습니다.
-                        </p>
-                        
-                        <a href="#" class="more">MORE<span><i class="fa fa-chevron-right"></i></span></a>
-                    </li>
-                    <li>
-                        <h3><span><i class="fa fa-user-circle-o"></i></span>인재상</h3>
-                        <p>
-                            한화는 신용과 의리에 기반하여 ‘도전, 헌신, 정도’를 3대 핵심가치로 삼는 인재상을 추구합니다
-                        </p>
-                        <!-- 인재상 3가지 -->
-                        
-                        <ul class="in">
-                            <li>
-                                <em>Challenge</em>
-                                <p>기존의 틀에 안주하지 않고 변화와 혁신을 통해 최고를 추구하는 도전적인 한화인</p>
-                            </li>
-                            <li>
-                                <em>Dedication</em>
-                                <p>회사, 고객, 동료와의 인연을 소중히 여기고 큰 목표를 위해 혼신의 힘을 다하는 헌신적인 한화인</p>
-                            </li>
-                            <li>
-                                <em>Integrity</em>
-                                <p>자긍심을 바탕으로 원칙에 따라 바르고 공정하게 행동하는 정도의 한화인</p>
-                            </li>
-                        </ul>
-                        
-                        <a href="#" class="more">MORE<span><i class="fa fa-chevron-right"></i></span></a>
-                    </li>
+                <!-- menu -->
+                <!-- ul.nav.fr>li.fl{About} -->
+                <ul class="nav fr">
+                    <li class="fl">[&nbsp;&nbsp;ABOUT&nbsp;&nbsp;]</li>
+                    <li class="fl">[&nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;]</li>
+                    <li class="fl">[&nbsp;&nbsp;OTHER DESIGN&nbsp;&nbsp;]</li>
                 </ul>
             </div>
-            <!-- 채용사이트 버튼 -->
-            
-            <div class="button"><a href="#">한화인 채용사이트</a></div>
+        </header>
+        <section id="profile">
+           <!-- h2.blind{profile} -->
+           <h2 class="blind">profile</h2>
+           <!-- 사진 + 소개 -->
+           <!-- .profile_main>.p_left.fl -->
+           <div class="profile_main">
+               <!-- 사진 -->
+               <div class="p_left fl">
+                   <h2 class="img blind">사진</h2>
+               </div>
+               <!-- 소개 -->
+               <!-- .p_right.fr>dl>dt+dd -->
+               <div class="p_right fr">
+                   <dl>
+                       <dt> WEB DESIGN <br />
+                        <span>&amp; WEB DEVELOPER </span>
+                       </dt>
+
+                       <dd>
+                        <span class="intro">
+                            안녕하세요?
+                            웹퍼블리셔 이길영입니다. 
+                        </span>
+                        <br />
+                        <br />
+                        사용자로 하여금 편의성과 만족도가 높은 웹페이지를 
+                        제작하는것이 저의 목표입니다. <br />
+                        부족한 부분은 배워나가며, 
+                        <span>소통을 중시하는 마음가짐</span>으로 노력하겠습니다. 
+                        <br />
+                        트렌드에 맞춰 쉬지 않고 노력하는 웹퍼블리셔가 되겠습니다.
+
+                       </dd>
+                   </dl>
+               </div>
+           </div>
         </section>
+        <section id="skill">
+            <!-- 연락처, sns, 자격증,사용툴, 스킬  -->
+            <div class="skill_main">
+                <h2>알아보기</h2>
+                <h3>ABOUT</h3>
+                <!-- about -->
+                <div class="box about fl"><i class="xi-user-plus xi-2x"></i>
+                        <dl>
+                            <dt>ABOUT</dt>
+                            <dd>이길영</dd>
+                            <dd>INFP</dd>
+                            <dd>1997-01-31</dd>
+                            <dd>수원시 영통구 망포동</dd>
+                            <dd>웹디자인/웹퍼블리셔 UIUX 양성과정</dd>
+                        </dl>
+                 </div>
+                <!-- CONTACTS -->
+                <div class="box contacts fl"><i class="xi-comment xi-2x"></i>
+                        <dl>
+                            <dt>CONTACTS</dt>
+                            <dd><i class="xi-call xi-2x"></i>010-6398-7346</dd>
+                            <dd><i class="xi-mail xi-2x"></i>4scv_tae@naver.com</dd>
+                            <dd><i class="xi-kakaotalk xi-2x"></i>@gil0</dd>
+                        </dl>
+                 </div>
+                <!-- licenses -->
+                <div class="box licenses fl"><i class="xi-book xi-2x"></i>
+                        <dl>
+                            <dt>LICENSES</dt>
+                            <dd>웹디자인기능사</dd>
+                            <dd>컴퓨터활용능력 2급</dd>
+                            <dd>운전면허 1종 보통</dd>
+                        </dl>
+                 </div>
+                <!-- tools -->
+                <div class="box tools fl"><i class="xi-desktop xi-2x"></i>
+                        <dl>
+                            <dt>TOOLS</dt>
+                            <dd>Adobe Photoshop</dd>
+                            <dd>Adobe Illustrator</dd>
+                            <dd>Adobe Indesign</dd>
+                            <dd>Adobe XD</dd>
+                            <dd>Zeplin</dd>
+                            <dd>Visual Studio Code</dd>
+                        </dl>
+                 </div>
+                <!-- skills -->
+                <div class="box skills fl"><i class="xi-code xi-2x"></i>
+                        <dl>                            
+                            <dt>SKILLS</dt>
+                            <dd>HTML5</dd>
+                            <dd>CSS3</dd>
+                            <dd>JavaScript</dd>
+                            <dd>jQuery</dd>
+                            <dd>Presentation</dd>
+                        </dl>
+                 </div>
 
-
-        <!-- 5. sns -->
-        <section class="sns">
-            <!-- title -->
-            <div class="title">
-                <h2>SNS CHANNEL<span>.</span></h2>
-                <p>SNS를 통해 한화솔루션/케미칼의  다양한 모습을 만나보세요.</p>
             </div>
-            <!-- sns-box 3ea -->
+        </section>
+        <section id="portfolio">
+            <h2>포트폴리오</h2>
+            <h3>PORTFOLIO</h3>
+            <div class="portfolio_main">
+                <!-- 한화케미칼 : 이미지 왼 -->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>01. 한화케미칼</h4>
+                        <h5>HANWHA <br /> CEHMICAL</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 메인페이지 <br /><br /><br />
+                            리뉴얼된 한화케마칼 메인페이지를 직접 코딩하여 <br />
+                            웹으로 구현하였습니다.
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://gilyeonglee.github.io/hanwha/" target="_blank">WEBSITE</a>
+                        </p>
+                    </dd>
+                </dl>
+                
+                <!-- 에버랜드 : 이미지 오-->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>02. 에버랜드</h4>
+                        <h5>EverLand</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 메인페이지 <br /><br /><br />
+                            에버랜드 메인페이지를 디자인하여 <br />
+                            웹으로 구현하였습니다.
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://github.com/GilYeongLee/ever.git" target="_blank">DOWN</a>
+                        </p>
+                    </dd>
+                </dl>
+                <!-- 라인 : 이미지 왼 -->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>03.</h4>
+                        <h5>Line</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 메인페이지 <br /><br /><br />
+                            라인 메인페이지를 직접 코딩하여 <br />
+                            웹으로 구현하였습니다.
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://gilyeonglee.github.io/line/" target="_blank">WEBSITE</a>
+                        </p>
+                    </dd>
+                </dl>
+                <!-- 스타벅스 : 이미지 오 -->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>04.스타벅스</h4>
+                        <h5>StarBucks</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 메인페이지 <br /><br /><br />
+                            스타벅스 메인페이지를 WIX로 디자인하여 <br />
+                            웹으로 구현하였습니다.
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://4scv133.wixsite.com/food" target="_blank">WEBSITE</a>
+                        </p>
+                    </dd>
+                </dl>
+                <!-- 앱 : 이미지 왼 -->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>05. 앱</h4>
+                        <h5>App</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 앱 <br /><br />
+                            APP을 디자인하였습니다 <br />
+                           
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://github.com/GilYeongLee/app.git" target="_blank">DOWN</a>
+                        </p>
+                    </dd>
+                </dl>
+                <!-- 애니메이션 : 이미지 오 (PSD) -->
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <h4>06. 애니메이션</h4>
+                        <h5>Animation</h5>
+                        <p>
+                            WEB CODING <br />
+                            제작 : 애니메이션 <br /><br /><br />
+                            애니메이션을 제작하여 목업에 넣어봤습니다
+                        </p>
+                        <p class="site_btn">
+                            <a href="https://gilyeonglee.github.io/anim/" target="_blank">MockUp</a>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section id="etc">
+            <!-- 기타디자인 -->
+            <h2>기타디자인</h2>
+            <h3>OTHER DESIGN</h3>
+            <div class="etc_main">
+                <!-- 1 -->                
+                <dl class="etc_1 fl">
+                    <dt>
+                        <p><strong>자세히보기</strong></p>
+                        <i></i>
+                    </dt>
+                    <dd>
+                    
+                    </dd>
+                </dl>
 
-            <ul>
-                <li>
-                    <a href="#">
-                        <!-- img -->
-                        <p class="img"><img src="./images/blog_1.png" alt="동호회"></p>
-                        <!-- text -->
-                        
-                        <div class="snsBottom">
-                            <p class="color">동호회</p>
-                            <p>한화 중아연구소, '청소년의 꿈'을 응원!...</p>
-                            <p class="time"><span>2021.11.25 12:00</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <!-- img -->
-                        <p class="img"><img src="./images/blog_3.png" alt="친환경 지원사업 업무협약식"></p>
-                        <!-- text -->
-                        
-                        <div class="snsBottom">
-                            <p class="color">친환경 지원사업 업무협약식</p>
-                            <p>한화 중앙연구소, 친환경 지원사업 업무 협약식</p>
-                            <p class="time"><span>2021.11.25 15:00</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <!-- img -->
-                        <p class="img"><img src="./images/blog_2.jpg" alt="화학캐스트"></p>
-                        <!-- text -->
-                        
-                        <div class="snsBottom">
-                            <p class="color">화학캐스트</p>
-                            <p>자동차에 색을 입히는 기술, 아크릴 수지 도료</p>
-                            <p class="time"><span>2021.11.25 19:00</span></p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                <!-- 2 -->                
+                <dl class="etc_2 fl">
+                    <dt>
+                        <p><strong>자세히보기</strong></p>
+                        <i></i>
+                    </dt>
+                    <dd>
+                       <span>앱</span> <br />
+                       반응형 PSD 제작
+                    </dd>
+                </dl>
+
+                <!-- 3 -->                
+                <dl class="etc_3 fl">
+                    <dt>
+                        <p><strong>자세히보기</strong></p>
+                        <i></i>
+                    </dt>
+                    <dd>
+                       <span>이벤트 페이지</span> <br />
+                       이벤트 페이지 응용 및 목업
+                    </dd>
+                </dl>
+
+                <!-- 4 -->                
+                <dl class="etc_4 fl">
+                    <dt>
+                        <p><strong>자세히보기</strong></p>
+                        <i></i>
+                    </dt>
+                    <dd>
+                       <span>애니메이션</span> <br />
+                       애니메이션 제작 및 목업
+                    </dd>
+                </dl>
+
+                <!-- 5 -->                
+                <dl class="etc_5 fl">
+                    <dt>
+                        <p><strong>자세히보기</strong></p>
+                        <i></i>
+                    </dt>
+                    <dd>
+                       <span>브랜딩리뉴얼</span> <br />
+                       브랜드로고 리뉴얼 및 목업
+                    </dd>
+                </dl>
+
+            </div>
         </section>
 
         <footer>
-            <div class="footer-inner">
-                <!-- blogo -->
-                <div class="blogo"><a href="#"><img src="./images/blogo.png" alt="하단한화로고"></a></div>
-                <!-- copyright -->
-                
-                <div class="copyright">
-                    <p>
-                        04541 서울특별시 중구 청계천로 86 한화빌딩 Copyright 2021 Hanwha Chemical. All right reserved.
-                    </p>
-                </div>
-                <!-- b-menu -->
-               
-                <div class="list">
-                    <ul>
-                        <li><a href="#">온라인구매시스템</a></li>
-                        <li><a href="#">고객문의</a></li>
-                        <li><a href="#">뉴스 &#38; 공지사항</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                    </ul>
-                </div>
+           <div class="footer_main">
+               <!-- btn -->
+               <img src="./images/btn_top.png" alt="최상단으로 가기 버튼"
+                class="btn_top">
+               <!-- phone.mail -->
+               <!-- ul.sns>li.fl*3>a -->
+               <ul class="sns">
+                   <li class="fl"><a href="tel:010-6398-7346"><i class="xi-mobile"></i></a></li>
+                   <li class="fl"><a href="4scv_tae@naver.com"><i class="xi-naver"></i></a></li>
+                   <li class="fl"><a href="4scv133@gmail.com"><i class="xi-gmail"></i></a></li>
+               </ul>
+               <!-- copyright -->
+               <div class="copy">
+                   <p>
+                       Copyright &copy; 2021 GilYeong. All right reserved.
+                   </p>
+               </div>
             </div>
         </footer>
-    </div>
-    <div id="popup">
-            <h4>
-            Hanwha Energy <br />
-            Innovation 전시관
-        </h4>
-        <div class="close">X 닫기</div>
-        <div class="text">
-            한화가 준비하는 그린 수소 시티 <br />
-            Hanwha Energy Innovation 전시관에 초대합니다.  <br /> <br />
-
-            한화는, 친환경 에너지 분야의 사업 경쟁력을 강화하여  <br />
-            그린소스 생태계 시장 진출을 적극적으로 추진하고 있습니다.  <br /> <br />
-
-            Hanwha Energy Innovation 전시관에서  <br />
-
-            한 걸음 가까워진 그린소스의 미래를 만나보세요.  <br /> 
-
-            <a href="#">사이트 바로가기</a> 사이트 바로가기
+        <!-- 기타디자인 박스슬라이드 팝업 -->
         
-        </div>
-    </div>
+		
+        <div id="popup">
+            <div class="popup_main">
+                <!-- popup bg -->
+				
+				
+                <div class="bg">
+                    <p class="close">
+                        팝업창을 닫으시려면 아무 곳이나 클릭하세요.
+                    </p>
+                </div>
+				
+				
+				
 
+				
+				
+				
+				
+                <!-- popup2 -->
+                <div id="popup2">
+                    <!-- 이전버튼 -->
+                    <button class="prev" title="이전버튼">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./images/app/app1.png" alt="app1"></li>
+                        <li class="popImg fl"><img src="./images/app/app2.png" alt="app2"></li>
+                        <li class="popImg fl"><img src="./images/app/app3.png" alt="app3"></li>
+                    </ul>
+                    <!-- 다음버튼 -->
+                    <button class="next" title="다음버튼">&#62;</button>
+                </div>
+                <!-- popup3 -->
+                <div id="popup3">
+                    <!-- 이전버튼 -->
+                    <button class="prev" title="이전버튼">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./images/ppt/eve1.png" alt="eve1"></li>
+                        <li class="popImg fl"><img src="./images/ppt/eve2.png" alt="eve2"></li>
+                        <li class="popImg fl"><img src="./images/ppt/eve3.png" alt="eve3"></li>
+
+                    </ul>
+                    <!-- 다음버튼 -->
+                    <button class="next" title="다음버튼">&#62;</button>
+                </div>
+                <!-- popup4 -->
+                <div id="popup4">
+                    <!-- 이전버튼 -->
+                    <button class="prev" title="이전버튼">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./images/drawing/animation1.png" alt="animation1"></li>
+                        <li class="popImg fl"><img src="./images/drawing/animation2.png" alt="animation2"></li>
+                        <li class="popImg fl"><img src="./images/drawing/animation3.png" alt="animation3"></li>
+                    </ul>
+                    <!-- 다음버튼 -->
+                    <button class="next" title="다음버튼">&#62;</button>
+                </div>
+				
+				
+				
+                <!-- popup5 -->
+                <div id="popup5">
+                    <!-- 이전버튼 -->
+                    <button class="prev" title="이전버튼">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./images/brand/bra1.png" alt="branding1"></li>
+                        <li class="popImg fl"><img src="./images/brand/bra2.png" alt="branding2"></li>
+                        <li class="popImg fl"><img src="./images/brand/bra3.png" alt="branding3"></li>
+
+                    </ul>
+                    <!-- 다음버튼 -->
+                    <button class="next" title="다음버튼">&#62;</button>
+                </div>
+
+            </div>
+        </div>
+		
+    </div>
 </body>
 </html>
